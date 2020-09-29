@@ -20,8 +20,6 @@ class SecondScreen: UIViewController {
 
     var selectedBook: SelectedBook?
     
-//    weak var delegate: ViewController!
-    
     lazy var containerView: UIView = {
 
         let view = UIView()
@@ -104,11 +102,9 @@ class SecondScreen: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(passData)
-        print(isViewLoaded)
         view.backgroundColor = .white
         
-        getJSON(isbn13: przepraszamZaTo!) {
+        getJSON(isbn13: passData!) {
             self.view.addSubview(self.containerView)
             self.containerView.anchor(top: self.view.topAnchor, left: self.view.leftAnchor,
                                       right: self.view.rightAnchor, height: 300)

@@ -58,4 +58,3 @@ extension SecondScreen {
     }
 }
 
-var przepraszamZaTo: String!

@@ -11,7 +11,6 @@ import UIKit
 
 extension ViewController : UITableViewDelegate, UITableViewDataSource {
     
-
        func tableView() {
            let tableView = UITableView(frame: self.view.frame, style: .plain)
            tableView.rowHeight = 50
@@ -47,14 +46,11 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
         
             let secondScreen = SecondScreen()
             secondScreen.passData = self.result?.books[indexPath.row].isbn13
-//            secondScreen.delegate = self
-            navigationController?.pushViewController(secondScreen, animated: true)
+//            navigationController?.pushViewController(secondScreen, animated: true)
 
-
-           przepraszamZaTo = self.result?.books[indexPath.row].isbn13
            self.modalTransitionStyle = UIModalTransitionStyle.coverVertical
            self.modalPresentationStyle = .currentContext
-           self.present(SecondScreen(), animated: true, completion: nil)
+           self.present(secondScreen, animated: true, completion: nil)
            tableView.deselectRow(at: indexPath, animated: true)
        }
     
