@@ -71,7 +71,6 @@
 				2E2B2A5A2520C0B3005CECBF /* API */,
 				2E2B2A582520C079005CECBF /* Models */,
 				2E2B2A592520C08B005CECBF /* Controllers */,
-				2E2B2A562520BDAD005CECBF /* TableExtension.swift */,
 				2E2B2A2F251CDCFE005CECBF /* Main.storyboard */,
 				2E2B2A32251CDD03005CECBF /* Assets.xcassets */,
 				2E2B2A34251CDD03005CECBF /* LaunchScreen.storyboard */,
@@ -93,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				2E2B2A2D251CDCFE005CECBF /* ViewController.swift */,
+				2E2B2A562520BDAD005CECBF /* TableExtension.swift */,
 				2E2B2A54251F8782005CECBF /* SecondScreen.swift */,
 			);
 			path = Controllers;

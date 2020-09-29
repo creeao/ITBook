@@ -13,10 +13,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
     var titleTextField: UITextField!
     var result: Welcome?
     var numberOfRows: Int = 0
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         searchBar()
         constraintsInit()
 
