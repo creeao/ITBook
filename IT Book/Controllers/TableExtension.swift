@@ -43,6 +43,12 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
        }
 
        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+            let secondScreen = SecondScreen()
+            secondScreen.passData = self.result?.books[indexPath.row].isbn13
+//            secondScreen.delegate = self
+            navigationController?.pushViewController(secondScreen, animated: true)
+
 
            przepraszamZaTo = self.result?.books[indexPath.row].isbn13
            self.modalTransitionStyle = UIModalTransitionStyle.coverVertical
